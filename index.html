@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SLUGFEST1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+  <style>
+    
+    :root {
+      --avatar-size: 50px;
+      --card-width: 500px;
+      --reaction-gap: 25px;
+      --reaction-font: 15px;
+      --repost-font: 14px;
+    }
+
+    body {
+      padding-top: 70px;
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    .avatar {
+      width: var(--avatar-size);
+      height: var(--avatar-size);
+      border-radius: 3px;
+      padding: 3px;
+      border: 1px solid #dee2e6;
+      object-fit: cover;
+    }
+
+    .compose-section {
+      width: var(--card-width);
+      display: flex;
+      justify-content: center;
+      margin: 2rem auto;
+    }
+
+    .compose-section textarea {
+      flex-grow: 1;
+    }
+
+    .post-card {
+      width: var(--card-width);
+      margin-bottom: 2rem;
+    }
+
+    .repost-line {
+      font-size: var(--repost-font);
+      color: #6c757d;
+      margin-left: 20px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .user-info {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .message {
+      margin-top: 2px;
+      margin-bottom: 8px;
+    }
+
+    .reactions {
+      display: flex;
+      gap: calc(var(--reaction-gap) * 3);
+    }
+
+    .reaction {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: var(--reaction-font);
+    }
+
+    .search-icon {
+      background-color: white;
+      color: black;
+      border-inline-start: none;
+      border-left: none;
+    }
+
+    .search-input {
+      border-inline-start: none;
+      border-left: none;
+      background-color: white;
+      color: black;
+    }
+  </style>
+
+  </head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-primary navbar-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SLUGFEST</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+              data-bs-target="#composeModal">Compose</a></li>
+          <li class="nav-item"><a class="nav-link" href="feed_user_1_profile.html">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Notification</a></li>
+        </ul>
+        <form class="d-flex align-items-center sm-auto md-auto" role="search">
+          <div class="input-group">
+            <span class="input-group-text search-icon">
+              <i class="bi bi-search"></i>
+            </span>
+            <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
+          </div>
+          <button class="btn btn-info ms-2" type="button">>|</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Welcome -->
+  <h1 class="text-center mt-5">Welcome to SlugFest</h1>
+
+  <!-- Compose Section -->
+  <div class="compose-section border-bottom pb-3">
+    <img src="assets/profile/kevin.jpeg" alt="User Avatar" class="avatar me-3">
+    <div class="flex-grow-1">
+      <textarea class="form-control mb-3" rows="3" placeholder="Compose Slime"></textarea>
+      <div class="text-end">
+        <button class="btn btn-primary">Slime <i class="bi bi-arrow-right-circle"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALL SLIMES-->
+  <div class="container d-flex flex-column align-items-center container-fluid">
+
+
+    <!-- Post FIFTEEN, CSL's Slime (#15) -->
+    <div class="card post-card">
+      <div class="card-body d-flex">
+        <img src="assets/profile/choong-soo.png" alt="Choong-Soo Lee Avatar" class="avatar me-3">
+        <div class="flex-grow-1">
+          <div class="user-info"><strong>Choong-Soo Lee</strong> <span class="text-muted">@ChoongSooL · 1 Hour
+              Ago</span></div>
+          <div class="message">On campus (September 6, 2021 at 09:41AM)</div>
+          <div class="reactions">
+            <div class="reaction"><i class="bi bi-chat"></i>0</div>
+            <div class="reaction"><i class="bi bi-arrow-repeat"></i>0</div>
+            <div class="reaction"><i class="bi bi-heart"></i>0</div>
+            <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post FOURTEEN, CSL's Slime (#14) -->
+    <div class="card post-card">
+      <div class="card-body d-flex">
+        <img src="assets/profile/choong-soo.png" alt="Choong-Soo Lee Avatar" class="avatar me-3">
+        <div class="flex-grow-1">
+          <div class="user-info"><strong>Choong-Soo Lee</strong> <span class="text-muted">@ChoongSooL · September
+              3</span></div>
+          <div class="message">Off campus (September 3, 2021 at 02:35PM)</div>
+          <div class="reactions">
+            <div class="reaction"><i class="bi bi-chat"></i>0</div>
+            <div class="reaction"><i class="bi bi-arrow-repeat"></i>0</div>
+            <div class="reaction"><i class="bi bi-heart"></i>0</div>
+            <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post THIRTEEN, CSL's Slime (#13) -->
+    <div class="card post-card">
+      <div class="card-body d-flex">
+        <img src="assets/profile/choong-soo.png" alt="Choong-Soo Lee Avatar" class="avatar me-3">
+        <div class="flex-grow-1">
+          <div class="user-info"><strong>Choong-Soo Lee</strong> <span class="text-muted">@ChoongSooL · September
+              3</span></div>
+          <div class="message">On campus (September 3, 2021 at 09:37AM)</div>
+          <div class="reactions">
+            <div class="reaction"><i class="bi bi-chat"></i>0</div>
+            <div class="reaction"><i class="bi bi-arrow-repeat"></i>0</div>
+            <div class="reaction"><i class="bi bi-heart"></i>0</div>
+            <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Post TWELVE, Ed's Slime (#6)-->
+    <div class="card post-card">
+      <div class="card-body d-flex">
+        <img src="assets/profile/ed.png" alt="Ed Haucourt Avatar" class="avatar me-3">
+        <div class="flex-grow-1">
+          <div class="user-info"><strong>Ed Harcourt</strong> <span class="text-muted">@ed · September 3</span></div>
+          <div class="message">Sabbatical is super nice. Not a care in the world.</div>
+          <div class="reactions">
+            <div class="reaction"><i class="bi bi-chat"></i>0</div>
+            <div class="reaction"><i class="bi bi-arrow-repeat"></i>1</div>
+            <div class="reaction"><i class="bi-heart-fill text-danger"></i>2</div>
+            <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Post ELEVEN, Ed Reslime of Slime (#1), This is Reslime (#5) in the User and Slime data-->
+    <div class="card post-card">
+      <div class="card-body d-flex flex-column">
+        <div class="repost-line"><i class="bi bi-arrow-repeat me-1"></i>Ed Harcourt reslimed</div>
+        <div class="d-flex">
+          <img src="assets/profile/kevin.jpeg" alt="User Avatar" class="avatar me-3">
+          <div class="flex-grow-1">
+            <div class="user-info"><strong>Kevin Angstadt</strong> <span class="text-muted">@KevinAAngstadt · August
+                30</span></div>
+            <div class="message">Hello World <a class="icon-link" href="#">#firstslime</a></div>
+            <div class="reactions">
+              <div class="reaction"><i class="bi bi-chat"></i>1</div>
+              <div class="reaction"><i class="bi bi-arrow-repeat"></i>3</div>
+              <div class="reaction"><i class="bi-heart-fill text-danger"></i>1</div>
+              <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Post TEN, Lisa Reslime of Slime (#1), This is Reslime (#8) in the User and Slime Data-->
+    <div class="card post-card">
+      <div class="card-body d-flex flex-column">
+        <div class="repost-line"><i class="bi bi-arrow-repeat me-1"></i>Lisa Torrey reslimed</div>
+        <div class="d-flex">
+          <img src="assets/profile/kevin.jpeg" alt="User Avatar" class="avatar me-3">
+          <div class="flex-grow-1">
+            <div class="user-info"><strong>Kevin Angstadt</strong> <span class="text-muted">@KevinAAngstadt · August
+                30</span></div>
+            <div class="message">Hello World <a class="icon-link" href="#">#firstslime</a></div>
+            <div class="reactions">
+              <div class="reaction"><i class="bi bi-chat"></i>1</div>
+              <div class="reaction"><i class="bi bi-arrow-repeat"></i>3</div>
+              <div class="reaction"><i class="bi-heart-fill text-danger"></i>1</div>
+              <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Post NINE, CSL's Slime (#12) -->
+    <div class="card post-card">
+      <div class="card-body d-flex">
+        <img src="assets/profile/choong-soo.png" alt="Choong-Soo Lee Avatar" class="avatar me-3">
+        <div class="flex-grow-1">
+          <div class="user-info"><strong>Choong-Soo Lee</strong> <span class="text-muted">@ChoongSooL · September
+              2</span></div>
+          <div class="message">Off campus (September 2, 2021 at 04:35PM)</div>
+          <div class="reactions">
+            <div class="reaction"><i class="bi bi-chat"></i>0</div>
+            <div class="reaction"><i class="bi bi-arrow-repeat"></i>0</div>
+            <div class="reaction"><i class="bi bi-heart"></i>0</div>
+            <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Post EIGHT, Lisa Torrey Slime (#7)-->
+    <div class="card post-card">
+      <div class=" card-body d-flex">
+        <img src="assets/profile/lisa.jpeg" alt="Lisa Torrey Avatar" class="avatar me-3">
+        <div class="flex-grow-1">
+          <div class="user-info"><strong>Lisa Torrey</strong><span class="text-muted">@LTorrey · September 2</span>
+            <div class="message">It's kinda cool that we have our own in-house Twitter clone. <a class="icon-link"
+                href="#">#CSThoughts</a></div>
+            <div class="reactions">
+              <div class="reaction"><i class="bi bi-chat"></i>0</div>
+              <div class="reaction"><i class="bi bi-arrow-repeat"></i>0</div>
+              <div class="reaction"><i class="bi bi-heart"></i>1</div>
+              <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Post SEVEN, CSL's Slime (#11) -->
+    <div class="card post-card">
+      <div class="card-body d-flex">
+        <img src="assets/profile/choong-soo.png" alt="User Avatar" class="avatar me-3">
+        <div class="flex-grow-1">
+          <div class="user-info"><strong>Choong-Soo Lee</strong> <span class="text-muted">@ChoongSooL · September
+              2</span></div>
+          <div class="message"> On campus (September 2, 2021 at 09:53AM)</div>
+          <div class="reactions">
+            <div class="reaction"><i class="bi bi-chat"></i>0</div>
+            <div class="reaction"><i class="bi bi-arrow-repeat"></i>0</div>
+            <div class="reaction"><i class="bi bi-heart"></i>0</div>
+            <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Post SIX, CSL's Slime (#10) -->
+    <div class="card post-card">
+      <div class="card-body d-flex">
+        <img src="assets/profile/choong-soo.png" alt="User Avatar" class="avatar me-3">
+        <div class="flex-grow-1">
+          <div class="user-info"><strong>Choong-Soo Lee</strong> <span class="text-muted">@ChoongSooL · September
+              1</span></div>
+          <div class="message">Off campus (September 1, 2021 at 04:23PM)</div>
+          <div class="reactions">
+            <div class="reaction"><i class="bi bi-chat"></i>0</div>
+            <div class="reaction"><i class="bi bi-arrow-repeat"></i>0</div>
+            <div class="reaction"><i class="bi bi-heart"></i>0</div>
+            <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post FIVE, Kevin's ReSlime of Post TWO, Ed's Slime (#4) -->
+    <div class="card post-card">
+      <div class="card-body d-flex flex-column">
+        <div class="repost-line"><i class="bi bi-arrow-repeat me-1"></i>Kevin Angstadt reslimed</div>
+        <div class="d-flex">
+          <img src="assets/profile/ed.png" alt="User Avatar" class="avatar me-3">
+          <div class="flex-grow-1">
+            <div class="user-info"><strong>Ed Harcourt</strong> <span class="text-muted">@EdH · September 1</span></div>
+            <div class="message"><span class="text-primary">@Kevin</span> Why am I on here?</div>
+            <div class="reactions">
+              <div class="reaction"><i class="bi bi-chat"></i>1</div>
+              <div class="reaction"><i class="bi bi-arrow-repeat"></i>1</div>
+              <div class="reaction"><i class="bi bi-heart"></i>0</div>
+              <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Post FOUR, Kevin's Reply to POST TWO which is Ed's Slime(#4) -->
+    <div class="card post-card">
+      <div class="card-body d-flex flex-column">
+        <div class="repost-line"><i class="bi bi-chat-fill me-1"></i><strong>Kevin Angstadt replied to Ed Harcourt</strong>
+        </div>
+        <div class="d-flex">
+          <img src="assets/profile/kevin.jpeg" alt="User Avatar" class="avatar me-3">
+          <div class="flex-grow-1">
+            <div class="user-info"><strong>Kevin Angstadt</strong> <span class="text-muted">@KevinAngstadt · September
+                1</span></div>
+            <div class="message"><span class="text-primary">@ed</span> SlugFest is way better than any other bird-based
+              platforms. That's for sure!</div>
+            <div class="reactions">
+              <div class="reaction"><i class="bi bi-chat"></i>0</div>
+              <div class="reaction"><i class="bi bi-arrow-repeat"></i>0</div>
+              <div class="reaction"><i class="bi bi-heart"></i>1</div>
+              <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post THREE, Choong Soo Lee's Slime (CSL) (#9) -->
+    <div class="card post-card">
+      <div class="card-body d-flex">
+        <img src="assets/profile/choong-soo.png" alt="User Avatar" class="avatar me-3">
+        <div class="flex-grow-1">
+          <div class="user-info"><strong>Choong-Soo Lee</strong> <span class="text-muted">@ChoongSooL · September
+              1</span>
+          </div>
+          <div class="message">On campus (September 1, 2021 at 09:49AM)</div>
+          <div class="reactions">
+            <div class="reaction"><i class="bi bi-chat"></i>0</div>
+            <div class="reaction"><i class="bi bi-arrow-repeat"></i>0</div>
+            <div class="reaction"><i class="bi bi-heart"></i>0</div>
+            <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post TWO, Slime (#4), Ed Reply To Slime (#1) -->
+    <div class="card post-card">
+      <div class="card-body d-flex flex-column">
+        <div class="repost-line"><i class="bi bi-chat-fill me-1"></i><strong>Ed Harcourt replied to Kevin Angstadt</strong>
+        </div>
+        <div class="d-flex">
+          <img src="assets/profile/ed.png" alt="User Avatar" class="avatar me-3">
+          <div class="flex-grow-1">
+            <div class="user-info"><strong>Ed Harcourt</strong> <span class="text-muted">@EdH · September 1</span></div>
+            <div class="message"><span class="text-primary">@Kevin</span> Why am I on here?</div>
+            <div class="reactions">
+              <div class="reaction"><i class="bi bi-chat"></i>1</div>
+              <div class="reaction"><i class="bi bi-arrow-repeat"></i>1</div>
+              <div class="reaction"><i class="bi bi-heart"></i>0</div>
+              <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post ONE, Slime (#1) Kevin's #firstslime-->
+    <div class="card post-card">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex">
+          <img src="assets/profile/kevin.jpeg" alt="User Avatar" class="avatar me-3">
+          <div class="flex-grow-1">
+            <div class="user-info"><strong>Kevin Angstadt</strong> <span class="text-muted">@KevinAAngstadt · August
+                30</span></div>
+            <div class="message">Hello World <a class="icon-link" href="#">#firstslime</a></div>
+            <div class="reactions">
+              <div class="reaction"><i class="bi bi-chat"></i>1</div>
+              <div class="reaction"><i class="bi bi-arrow-repeat"></i>3</div>
+              <div class="reaction"><i class="bi-heart-fill text-danger"></i>1</div>
+              <div class="reaction"><i class="bi bi-box-arrow-up"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Compose MODal -->
+  <div class="modal fade" id="composeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="composeModalLabel">Compose Slime</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <textarea class="form-control" rows="3" placeholder="Slime away..."></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Slime</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
