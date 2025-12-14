@@ -1,4 +1,237 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Google Font: Lato only -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Martí Peidro Riverola</a>
+    </div>
+
+    <div class="right">
+      <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+
+      <a class="cv-button" href="Resume Marti (2).pdf" download>
+        <i class="fa-solid fa-file-arrow-down"></i>
+        <span>Download CV</span>
+      </a>
+
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Marti</h2>
+        <p>I am pursuing a major in Economics and Business with a minor in Chinese Studies at St. Lawrence University. I am from Barcelona, Spain, and I also spent two years in Hong Kong completing the International Baccalaureate diploma at United World College. Living in such diverse parts of the world has given me a global perspective and strengthened my adaptability and cross-cultural understanding.I have a strong passion for entrepreneurship and social work, with particular interests in the non-profit sector and businesses committed to corporate social responsibility. Ultimately, I aspire to combine my academic background with this passion to develop initiatives that create meaningful social impact</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+          <a href="#testimony">
+            <i class="fa-solid fa-pen"></i>
+            <span>Education</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+          <a href="#featured-projects">
+            <i class="fa-solid fa-suitcase"></i>
+            <span>Featured Projects</span>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="photo.JPG">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, perspiciatis iure distinctio quidem aperiam necessitatibus omnis possimus excepturi amet quos rerum? Perferendis repellat natus saepe quaerat quibusdam neque recusandae optio?
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/node-logo.webp" alt="node logo">
+          <span>Node.js</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/react-logo.webp" alt="react logo">
+          <span>React.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Featured projects -->
+    
+    <section class="py-5" id="featured-projects">
+    <div class="container text-center">
+
+    <h2 class="mb-3">Featured Projects</h2>
+    <p class="text-muted mb-4">Some of my recent work.</p>
+
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-4">
+        <div class="card p-3">
+          <img src="royalink.jpg" class="mx-auto d-block project-img" alt="Project 1">
+          <h5 class="mt-3">Roya Link</h5>
+          <p class="text-muted">A short description of the project.</p>
+          <a href="#" class="btn btn-primary btn-sm" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4">
+        <div class="card p-3">
+          <img src="empowering.jpg" class="mx-auto d-block project-img" alt="Project 2">
+          <h5 class="mt-3">Empowering Angels</h5>
+          <p class="text-muted">A short description of the project.</p>
+          <a href="https://empowering-angels.com/" class="btn btn-primary btn-sm" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <div class="card p-3">
+          <img src="stlawrence.jpg" class="mx-auto d-block project-img" alt="Project 3">
+          <h5 class="mt-3">Internship Fellowship</h5>
+          <p class="text-muted">A short description of the project.</p>
+          <a href="https://scholar.stlawu.edu/marti-peidro-riverola" class="btn btn-primary btn-sm" target="_blank">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    
+
+
+<!--
+    
+    <section id="projects" class="projects-section">
+    <h2>Featured Projects</h2>
+    <div class="container text-center">
+    <div class="row align-items-start">
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+  </div>
+</div>
+    
+    </section>-->
+
+
+    <!-- SECTION 3: Education -->
+    <section id="testimony" class="testimony-section">
+      <h2>Testimony</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="images/testimony-headshot.webp">
+          <p>John Doe</p>
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+
+        <div class="text">
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, sint repudiandae ratione exercitationem saepe distinctio cumque quaerat nostrum laborum? Rem adipisci natus eos nemo reprehenderit, cumque nostrum enim commodi. Eum, enim vero eveniet doloremque sed veniam. Doloremque explicabo non reprehenderit expedita! Accusamus mollitia repellendus dolorum officiis libero quod deleniti cum."
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat fugit maiores atque architecto saepe tenetur quasi reiciendis illum sint doloremque alias inventore, asperiores maxime pariatur totam hic assumenda repudiandae, iusto quisquam nisi! Eaque doloremque perspiciatis minus voluptate dicta. A ratione autem dolor iure libero numquam voluptatem nobis laborum et corporis.
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+
+<!--<!doctype html>
 <html lang="en">
 
 <head>
@@ -8,124 +241,99 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
- 
- <style>
-    /* Basic custom styles */
-:root{
-  --accent: #0d6efd; /* change to your color */
-  --muted: #6c757d;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
 
-body{
-  background: #f8fafc;
-  color: #212529;
-  -webkit-font-smoothing:antialiased;
-}
-
-.navbar-brand { font-size:1.15rem; letter-spacing:0.4px; }
-
-header { background: linear-gradient(180deg, rgba(13,110,253,0.06), rgba(255,255,255,0)); }
-
-.card { border: none; border-radius: 12px; box-shadow: 0 6px 18px rgba(17,24,39,0.04); }
-
-footer a { text-decoration: none; }
-
-@media (max-width: 576px) {
-  header .container { text-align:center; }
-  header img { margin: 0 auto; }
-}
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="stylesheet"  herf="style.css">
+
+  <title>Portafolio</title>
   </head>
-
-<body>
-  <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">YourName</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-
-  <!-- HERO -->
-  <header class="bg-light py-5">
-    <div class="container d-flex flex-column flex-md-row align-items-center gap-4">
-      <img src="assets/img/profile.jpg" alt="Your Name" class="rounded-circle" width="160" height="160">
-      <div>
-        <h1 class="display-6 mb-2">Hi — I’m <span class="text-primary">Your Name</span></h1>
-        <p class="lead">Frontend developer &amp; designer. I build responsive websites with HTML, CSS, Bootstrap, and accessible UX.</p>
-        <div class="mt-3">
-          <a href="projects.html" class="btn btn-primary me-2">View Projects</a>
-          <a href="contact.html" class="btn btn-outline-primary">Contact Me</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- SKILLS -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="h4 mb-3">Skills</h2>
-      <div class="row g-3">
-        <div class="col-6 col-md-3"><div class="card p-3">HTML5</div></div>
-        <div class="col-6 col-md-3"><div class="card p-3">CSS / Bootstrap</div></div>
-        <div class="col-6 col-md-3"><div class="card p-3">JavaScript</div></div>
-        <div class="col-6 col-md-3"><div class="card p-3">Jekyll / Markdown</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURED PROJECTS -->
-  <section class="py-5 bg-white">
-    <div class="container">
-      <h2 class="h4 mb-4">Featured Projects</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <article class="card h-100">
-            <img src="assets/img/project1.png" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h3 class="h6 card-title">Project Title</h3>
-              <p class="card-text">Short description. Tech: HTML, CSS, JS.</p>
-              <a href="#" class="stretched-link">Details</a>
-            </div>
-          </article>
-        </div>
-        <!-- copy more project cards -->
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="py-4 bg-dark text-light">
-    <div class="container d-flex justify-content-between align-items-center">
-      <small>© <span id="year"></span> Your Name</small>
-      <div>
-        <a href="#" class="text-light me-2">GitHub</a>
-        <a href="#" class="text-light">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
+  
+<h1>Hello World</h1>
 </body>
 
-</html>
+</html> 
+2nd
+
+
+DOS DOS DOS DOS DOS
+
+<head>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Portfolio</title>
+
+
+</head>-->
+
+
+
+
+<!--SECTION PROJECTS:<section id="featured-projects" class="py-5">
+  <div class="container">
+
+   
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Featured Projects</h2>
+      <p class="text-muted">A selection of my recent work showcasing design, development, and creativity.</p>
+    </div>
+
+    
+    <div class="row g-4">
+
+      1 PROJECT
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="royalink.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Roya Link</h5>
+            <p class="card-text">Short description of what the project is about.</p>
+            <a href="https://www.roya-link.org/" class="btn btn-primary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      2
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/project2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project Title 2</h5>
+            <p class="card-text">Short description of what the project is about.</p>
+            <a href="#" class="btn btn-primary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      3
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/project3.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project Title 3</h5>
+            <p class="card-text">Short description of what the project is about.</p>
+            <a href="#" class="btn btn-primary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div> 
+  </div> 
+</section>-->
