@@ -9,6 +9,8 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -28,93 +30,120 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
   <!-- NAVBAR -->
-  <nav>
-    <div class="left">
-      <a href="/">Martí Peidro Riverola</a>
+<nav class="navbar navbar-expand-lg" style="background-color: #4a76ee;">
+  <div class="container-fluid">
+    <!-- Brand / Left -->
+    <a class="navbar-brand text-dark px-3 py-2 rounded" href="/" style="background-color: #eeeff1;">Martí Peidro Riverola</a>
+
+    <!-- Toggler button for mobile -->
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color: #eeeff1;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto gap-2 mt-3 mt-md-0">
+        <li class="nav-item">
+          <a class="nav-link text-dark px-3 py-2 rounded d-flex align-items-center"
+             href="http://linkedin.com" target="_blank" style="background-color: #eeeff1;">
+            <i class="fa-brands fa-linkedin me-1"></i> Linkedin
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark px-3 py-2 rounded d-flex align-items-center"
+             href="Resume Marti (2).pdf" download style="background-color: #eeeff1;">
+            <i class="fa-solid fa-file-arrow-down me-2"></i> Download CV
+          </a>
+        </li>
+      </ul>
     </div>
-
-    <div class="right">
-      <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin"></i>
-        <span>Linkedin</span>
-      </a>
-
-      <a class="cv-button" href="Resume Marti (2).pdf" download>
-        <i class="fa-solid fa-file-arrow-down"></i>
-        <span>Download CV</span>
-      </a>
-
-    </div>
-  </nav>
+  </div>
+</nav>
 
   <main>
-    <!-- SECTION 1: Hero -->
-    <section class="hero-section">
-      <div class="text">
+    <section class="py-5">
+      <div class="container">
+      <div class="row align-items-center">
+
+      <!-- Text -->
+      <div class="col-md-6 text-center text-md-start">
         <h2>Hi, I'm Marti</h2>
-        <p>I am pursuing a major in Economics and Business with a minor in Chinese Studies at St. Lawrence University. I am from Barcelona, Spain, and I also spent two years in Hong Kong completing the International Baccalaureate diploma at United World College. Living in such diverse parts of the world has given me a global perspective and strengthened my adaptability and cross-cultural understanding.I have a strong passion for entrepreneurship and social work, with particular interests in the non-profit sector and businesses committed to corporate social responsibility. Ultimately, I aspire to combine my academic background with this passion to develop initiatives that create meaningful social impact</p>
+        <p>
+          I am pursuing a major in Economics and Business with a minor in Chinese
+          Studies at St. Lawrence University. I am from Barcelona, Spain, and spent
+          two years in Hong Kong completing the IB diploma.
+        </p>
 
         <div class="links">
           <a href="#skills">
-            <i class="fa-solid fa-code"></i>
-            <span>Skills</span>
-          </a>
-          
-          <a href="#testimony">
-            <i class="fa-solid fa-pen"></i>
-            <span>Education</span>
-          </a>
-          
-          <a href="#contact">
-            <i class="fa-solid fa-envelope"></i>
-            <span>Contact</span>
-          </a>
-          <a href="#featured-projects">
-            <i class="fa-solid fa-suitcase"></i>
-            <span>Featured Projects</span>
+            <i class="fa-solid fa-code"></i> Skills
           </a>
 
+          <a href="#education">
+            <i class="fa-solid fa-pen"></i> Education
+          </a>
+
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i> Contact
+          </a>
+
+          <a href="#featured-projects">
+            <i class="fa-solid fa-suitcase"></i> Projects
+          </a>
         </div>
       </div>
 
-      <div class="headshot">
-        <img src="photo.JPG">
+      <!-- Image -->
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img src="photo.JPG" class="img-fluid hero-img" alt="Marti">
+        <!-- <img src="photo.JPG" class="img-fluid" style="max-width: 300px;" alt="Marti"> -->
       </div>
-    </section>
+
+    </div>
+    </div>
+  </section>
 
     <!-- SECTION 2: Skills -->
     <section id="skills" class="skills-section">
       <h2>Skills</h2>
       <div class="text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, perspiciatis iure distinctio quidem aperiam necessitatibus omnis possimus excepturi amet quos rerum? Perferendis repellat natus saepe quaerat quibusdam neque recusandae optio?
+        Here are some of the tools, languages, and skills I’ve developed through my studies, projects, and experiences. I’m constantly learning and expanding my skill set to tackle new challenges
       </div>
 
       <div class="cells">
         <div class="cell">
-          <img src="images/html-logo.webp" alt="html logo">
+          <img src="htmlimage.jpg" alt="html logo">
           <span>HTML</span>
         </div>
         
         <div class="cell">
-          <img src="images/css-logo.webp" alt="css logo">
+          <img src="CSSimage.jpg" alt="css logo">
           <span>CSS</span>
         </div>
         
         <div class="cell">
-          <img src="images/javascript-logo.webp" alt="javascript logo">
-          <span>JavaScript</span>
+          <img src="Figmaimage.jpg" alt="Figma logo">
+          <span>Figma</span>
         </div>
         
         <div class="cell">
-          <img src="images/node-logo.webp" alt="node logo">
-          <span>Node.js</span>
+          <img src="Microsoftimage.jpg" alt="Microsoft logo">
+          <span>Excel Word and Power Point</span>
         </div>
         
         <div class="cell">
-          <img src="images/react-logo.webp" alt="react logo">
-          <span>React.js</span>
+          <img src="Languages.jpg" alt="react logo">
+          <span>Catalan Spanish Inglish Chinese</span>
         </div>
       </div>
     </section>
@@ -135,7 +164,7 @@
           <img src="royalink.jpg" class="mx-auto d-block project-img" alt="Project 1">
           <h5 class="mt-3">Roya Link</h5>
           <p class="text-muted">A short description of the project.</p>
-          <a href="#" class="btn btn-primary btn-sm" target="_blank">View Project</a>
+          <a href="https://www.roya-link.org/" class="btn btn-primary btn-sm" target="_blank">View Project</a>
         </div>
       </div>
 
@@ -164,69 +193,77 @@
 </section>
     
 
-
-<!--
-    
-    <section id="projects" class="projects-section">
-    <h2>Featured Projects</h2>
+    <!-- SECTION 3: Education -->
+    <section id="education" class="py-5">
     <div class="container text-center">
-    <div class="row align-items-start">
-    <div class="col">
-      One of three columns
-    </div>
-    <div class="col">
-      One of three columns
-    </div>
-    <div class="col">
-      One of three columns
+    <h2 class="mb-4">Education</h2>
+
+    <div class="row g-4">
+
+      <!-- High School Column -->
+      <div class="col-md-6">
+        <div class="card p-3 h-100">
+          <img src="lipochunuwc.jpg" alt="High School" class="mb-3 mx-auto d-block education-img">
+          <h5>United World College Hong Kong</h5>
+          <p class="text-muted">International Baccalaureate Diploma, 2022–2024</p>
+          <p>Completed the IB curriculum with focus on global perspective, community service, and leadership development.</p>
+        </div>
+      </div>
+
+      <!-- University Column -->
+      <div class="col-md-6">
+        <div class="card p-3 h-100">
+          <img src="slu.jpg" alt="University" class="mb-3 mx-auto d-block education-img">
+          <h5>St. Lawrence University</h5>
+          <p class="text-muted">Bachelor in Economics and Business, Expected 2028</p>
+          <p>Pursuing a major in Economics and Business with a minor in Chinese Studies, engaging in entrepreneurship and social work projects.</p>
+        </div>
+      </div>
+
     </div>
   </div>
-</div>
-    
-    </section>-->
-
-
-    <!-- SECTION 3: Education -->
-    <section id="testimony" class="testimony-section">
-      <h2>Testimony</h2>
-
-      <div class="group">
-        <div class="person-details">
-          <img src="images/testimony-headshot.webp">
-          <p>John Doe</p>
-          <p>Lorem ipsum dolor sit.</p>
-        </div>
-
-        <div class="text">
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, sint repudiandae ratione exercitationem saepe distinctio cumque quaerat nostrum laborum? Rem adipisci natus eos nemo reprehenderit, cumque nostrum enim commodi. Eum, enim vero eveniet doloremque sed veniam. Doloremque explicabo non reprehenderit expedita! Accusamus mollitia repellendus dolorum officiis libero quod deleniti cum."
-        </div>
-      </div>
-    </section>
+</section>
 
     <!-- SECTION 4: Contact -->
-    <section id="contact" class="contact-section">
-      <h2>Contact</h2>
+  <section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">Contact</h2>
 
-      <div class="group">
-        <div class="text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat fugit maiores atque architecto saepe tenetur quasi reiciendis illum sint doloremque alias inventore, asperiores maxime pariatur totam hic assumenda repudiandae, iusto quisquam nisi! Eaque doloremque perspiciatis minus voluptate dicta. A ratione autem dolor iure libero numquam voluptatem nobis laborum et corporis.
-        </div>
+    <div class="row g-4">
 
-        <form>
+      <!-- Text -->
+      <div class="col-md-6">
+        <p>
+          I’d love to hear from you! Whether you have a question, a collaboration idea, or just want to say hello, feel free to get in touch.
+        </p>
+      </div>
+
+      <!-- Form -->
+      <div class="col-md-6">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms access key -->
+          <input type="hidden" name="access_key" value="7e4fe3a8-6153-45fe-9f2e-8c3e2bd2a853">
+
           <label for="name">Name</label>
-          <input type="text" id="name">
+          <input type="text" id="name" name="name" class="form-control mb-3">
 
           <label for="email">Email</label>
-          <input type="email" id="email">
+          <input type="email" id="email" name="email" class="form-control mb-3">
 
           <label for="message">Message</label>
-          <textarea id="message" cols="30" rows="10"></textarea>
+          <textarea id="message" name="message" cols="30" rows="5" class="form-control mb-3"></textarea>
 
-          <button type="submit">Send Message</button>
+          <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
       </div>
-    </section>
+
+    </div>
+  </div>
+</section>
+
+
   </main>
+   
 </body>
 </html>
 
@@ -260,80 +297,4 @@
 </body>
 
 </html> 
-2nd
 
-
-DOS DOS DOS DOS DOS
-
-<head>
-<meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="style.css">
-
-  <title>Portfolio</title>
-
-
-</head>-->
-
-
-
-
-<!--SECTION PROJECTS:<section id="featured-projects" class="py-5">
-  <div class="container">
-
-   
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Featured Projects</h2>
-      <p class="text-muted">A selection of my recent work showcasing design, development, and creativity.</p>
-    </div>
-
-    
-    <div class="row g-4">
-
-      1 PROJECT
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="royalink.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Roya Link</h5>
-            <p class="card-text">Short description of what the project is about.</p>
-            <a href="https://www.roya-link.org/" class="btn btn-primary" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      2
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/project2.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Project Title 2</h5>
-            <p class="card-text">Short description of what the project is about.</p>
-            <a href="#" class="btn btn-primary" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      3
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img/project3.jpg" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <h5 class="card-title">Project Title 3</h5>
-            <p class="card-text">Short description of what the project is about.</p>
-            <a href="#" class="btn btn-primary" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-    </div> 
-  </div> 
-</section>-->
