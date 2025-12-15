@@ -4,12 +4,6 @@
   --background-color: #eeeff1;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -19,9 +13,9 @@ body {
     
   font-family: 'Poppins', sans-serif;
   color: var(--text-color);
-  background-color: var(--background-color);
-  max-width: 1400px;
-  margin: 0 auto; 
+  background-color: var(--background-color); 
+ /* max-width: 1400px;
+  margin: 0 auto; */
 }
 
 a {
@@ -29,11 +23,8 @@ a {
   text-decoration: none;
 }
 
-/* NAVBAR */
 
-
-
-/* SECTION 1: Hero */
+/* Hero Section*/
 
 .links a {
   display: inline-block;
@@ -52,9 +43,9 @@ a {
 }
 .hero-img {
   max-width: 350px;
-  border-radius: 20px; /* adjust this number */
+  border-radius: 20px;
 }
-/* SECTION 2: Skills */
+/* Skills Section*/
 .skills-section {
   padding: 0 50px;
   margin-bottom: 100px;
@@ -100,21 +91,16 @@ a {
   font-size: 18px;
 }
 
-/* SECTION 3: Featured Projects */
+/* Featured Projects Section*/
 
 .project-img {
   width: 100%;
-  height: 180px;      /* You can adjust this height */
-  object-fit: cover;  /* Makes all images crop nicely */
-  border-radius: 6px; /* Optional — remove if you don't want rounded */
+  height: 180px;      
+  object-fit: contain;  
+  border-radius: 6px; 
 }
 
-/* SECTION 4: Education */
-
-
-.education-section h2 {
-  font-weight: 700;
-}
+/* Education Section */
 
 .education-img {
   width: 300px;      
@@ -123,7 +109,8 @@ a {
   border-radius: 8px; 
 }
 
-/* SECTION 4: Contact */
+/* Contact Section*/
+
 form label {
   font-weight: 600;
   margin-top: 10px;
