@@ -1,0 +1,20 @@
+References: 
+Google.(2025/12/12). Google personal portfolio examples. Googlehttps://www.google.com/search?q=personal+portfolio+&sca
+
+Cherry, K. (2024, February 20). The color blue: Meaning and color psychology. Verywell Mind. https://www.verywellmind.com/the-color-psychology-of-blue-2795815
+
+Coolors. (n.d.). Blue color palettes – Coolors. https://coolors.co/palettes/popular/blue
+
+Font Awesome. (n.d.). Font Awesome: Icon toolkit. https://fontawesome.com/
+
+Google. (n.d.). Google Fonts: High‑quality fonts to use on your web site (Google Developers). https://developers.google.com/fonts
+
+Stack Overflow. (2016, November 6). Bootstrap toggle button is not working (Question #40448444). https://stackoverflow.com/questions/40448444/bootstrap-toggle-button-is-not-working
+
+W3Schools. (n.d.). CSS syntax (CSS tutorial).https://www.w3schools.com/css/css_syntax.ASP
+
+Norman, D. A. (2013). The design of everyday things (Revised and expanded ed.). Basic Books.
+https://stlawu-bookshelf.vitalsource.com/?context_token=1c0dd9c0-bc3c-013e-d3ed-1add10278930#/books/9780465072996?context_token=1c0dd9c0-bc3c-013e-d3ed-1add10278930
+
+Osborn, T. (2021). Hello web design. William Pollock 
+https://stlawu-bookshelf.vitalsource.com/reader/books/9781718501393/epubcfi/6/6[%3Bvnd.vst.idref%3Dcopy]!/4/20/1:34[-Ra%2Cma]
